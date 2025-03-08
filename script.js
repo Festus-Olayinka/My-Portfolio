@@ -47,7 +47,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     const message = document.getElementById('message').value;
   
     // Send the form data to the backend using fetch
-    fetch('http://localhost:5000/send-email', {
+    fetch('/send-email', {
       method: 'POST', // Use the POST method
       headers: {
         'Content-Type': 'application/json', // Set the content type to JSON
