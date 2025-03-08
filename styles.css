@@ -1,0 +1,187 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif; /* Set the default font family */
+    line-height: 1.6; /* Set the line height for better readability */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    background-color: #f4f4f4; /* Set a light background color */
+    color: #333; /* Set the default text color */
+  }
+  
+  .container {
+    width: 90%; /* Set the width of the container */
+    max-width: 1200px; /* Set a maximum width for larger screens */
+    margin: 0 auto; /* Center the container horizontally */
+    padding: 20px; /* Add padding inside the container */
+  }
+  
+  h1, h2, h3 {
+    color: #333; /* Set the color for headings */
+  }
+  
+  a {
+    text-decoration: none; /* Remove underline from links */
+    color: #007BFF; /* Set the default link color */
+  }
+  
+  a:hover {
+    text-decoration: underline; /* Add underline on hover */
+  }
+  
+  /* Header Styles */
+  header {
+    background: #333; /* Set a dark background for the header */
+    color: #fff; /* Set white text color */
+    padding: 20px 0; /* Add padding to the header */
+    text-align: center; /* Center-align the header content */
+  }
+  
+  header h1 {
+    margin: 0; /* Remove margin from the header title */
+  }
+  
+  header p {
+    margin: 5px 0 0; /* Add margin to the header paragraph */
+  }
+  
+  nav ul {
+    list-style: none; /* Remove bullet points from the navigation list */
+    padding: 0; /* Remove default padding */
+  }
+  
+  nav ul li {
+    display: inline; /* Display list items inline */
+    margin: 0 10px; /* Add margin between list items */
+  }
+  
+  nav ul li a {
+    color: #fff; /* Set white color for navigation links */
+  }
+  
+  /* Section Styles */
+  section {
+    padding: 40px 0; /* Add padding to sections */
+  }
+  
+  section h2 {
+    text-align: center; /* Center-align section headings */
+    margin-bottom: 20px; /* Add margin below section headings */
+  }
+  
+  /* Projects Grid */
+  .project-grid {
+    display: grid; /* Use CSS Grid for the project layout */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive grid layout */
+    gap: 20px; /* Add gap between grid items */
+  }
+  
+  .project-card {
+    background: #fff; /* Set a white background for project cards */
+    padding: 20px; /* Add padding inside project cards */
+    border-radius: 8px; /* Add rounded corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Add smooth hover transitions */
+  }
+  
+  .project-card:hover {
+    transform: translateY(-10px); /* Lift the card on hover */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Increase shadow on hover */
+  }
+  
+  .project-card h3 {
+    margin-top: 0; /* Remove margin from the project card title */
+  }
+  
+  /* Button Styles */
+  .btn {
+    display: inline-block; /* Make buttons inline-block elements */
+    background: #007BFF; /* Set the button background color */
+    color: #fff; /* Set white text color */
+    padding: 10px 20px; /* Add padding to buttons */
+    border-radius: 5px; /* Add rounded corners */
+    margin: 5px 0; /* Add margin to buttons */
+  }
+  
+  .btn:hover {
+    background: #0056b3; /* Change background color on hover */
+  }
+  
+  /* Contact Form Styles */
+  #contact-form {
+    display: flex; /* Use flexbox for the form layout */
+    flex-direction: column; /* Stack form items vertically */
+  }
+  
+  #contact-form input, #contact-form textarea {
+    margin: 10px 0; /* Add margin to form inputs */
+    padding: 10px; /* Add padding to form inputs */
+    border: 1px solid #ccc; /* Add a border to form inputs */
+    border-radius: 5px; /* Add rounded corners */
+  }
+  
+  #contact-form button {
+    background: #007BFF; /* Set the button background color */
+    color: #fff; /* Set white text color */
+    border: none; /* Remove button border */
+    padding: 10px; /* Add padding to the button */
+    border-radius: 5px; /* Add rounded corners */
+    cursor: pointer; /* Change cursor to pointer on hover */
+  }
+  
+  #contact-form button:hover {
+    background: #0056b3; /* Change background color on hover */
+  }
+  
+  /* Footer Styles */
+  footer {
+    background: #333; /* Set a dark background for the footer */
+    color: #fff; /* Set white text color */
+    text-align: center; /* Center-align footer content */
+    padding: 10px 0; /* Add padding to the footer */
+  }
+  
+  /* Social Links Styles */
+  .social-links {
+    margin-top: 20px; /* Add margin above social links */
+  }
+  
+  .social-links a {
+    margin: 0 10px; /* Add margin between social links */
+    color: #007BFF; /* Set the default color for social links */
+    font-size: 24px; /* Set the font size for social icons */
+  }
+  
+  .social-links a:hover {
+    color: #0056b3; /* Change color on hover */
+  }
+  
+  /* Profile Section Styles */
+  .profile {
+    display: flex; /* Use flexbox for the profile layout */
+    align-items: center; /* Align items vertically in the center */
+    gap: 20px; /* Add gap between profile items */
+  }
+  
+  .profile-img {
+    width: 150px; /* Set the width of the profile image */
+    height: 150px; /* Set the height of the profile image */
+    border-radius: 50%; /* Make the image circular */
+    border: 4px solid #007BFF; /* Add a border to the image */
+    object-fit: cover; /* Ensure the image covers the area */
+  }
+  
+  /* Fade-In Animation */
+  @keyframes fadeIn {
+    from {
+      opacity: 0; /* Start with 0 opacity */
+      transform: translateY(20px); /* Start 20px below */
+    }
+    to {
+      opacity: 1; /* End with full opacity */
+      transform: translateY(0); /* Move to original position */
+    }
+  }
+  
+  .about-animation {
+    animation: fadeIn 1.5s ease-out; /* Apply the fadeIn animation */
+  }
